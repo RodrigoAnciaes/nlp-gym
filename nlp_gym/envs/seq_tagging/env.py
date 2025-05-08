@@ -95,10 +95,26 @@ class SeqTagEnv(BaseEnv):
 
     @staticmethod
     def _tokenize(text: str, label: List[str]) -> List[str]:
-        tokens = SpaceTokenizer().run_tokenize(text)
-        token_texts = [token.text for token in tokens]
+        """
+        Tokenizes the input text and returns token texts.
+        This method has been fixed to handle both Flair Token objects and string tokens.
+        """
+        try:
+            # Try using Flair's SpaceTokenizer (which should return token objects)
+            tokens = SpaceTokenizer().run_tokenize(text)
+            
+            # Check if tokens are already strings or token objects
+            if tokens and hasattr(tokens[0], 'text'):
+                token_texts = [token.text for token in tokens]
+            else:
+                # If tokens are already strings
+                token_texts = tokens
+        except (AttributeError, TypeError):
+            # Fallback to simple space-based tokenization
+            token_texts = text.split()
 
-        assert len(token_texts) == len(label), "Tokenization does not match with available labels"
+        # Verify token and label lengths match
+        assert len(token_texts) == len(label), f"Tokenization does not match with available labels: {len(token_texts)} tokens vs {len(label)} labels"
         return token_texts
 
     def reset(self, sample: Sample = None) -> Union[Observation, np.array]:
