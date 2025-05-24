@@ -1,0 +1,17 @@
+datasets==3.6.0
+flair==0.15.1
+gym==0.26.2
+matplotlib==3.10.3
+nltk==3.9.1
+numpy==2.2.6
+pytest==8.3.5
+rich==14.0.0
+scikit_learn==1.6.1
+setuptools==65.5.0
+stable_baselines==2.10.2
+stable_baselines3==2.6.0
+torch==2.7.0
+torchnlp==0.0.0.1
+tqdm==4.67.1
+wget==3.2
+scikit-learn
