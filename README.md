@@ -12,7 +12,7 @@ This repository includes educational materials in the `classes/` directory, orga
 
 - **Part 1** (`part1.ipynb`): Introduction to Reinforcement Learning fundamentals and Q-Learning
 - **Part 2** (`part2.ipynb`): Deep Reinforcement Learning with Neural Networks and DQN
-- **Part 3** (`part3.ipynb`): Advanced applications (referenced but not included in this share)
+- **Part 3** (`part3.ipynb`): Embeddings and appliyng them in with NLP_gym)
 - **Practical Application** (`nlpgym_practical_application.ipynb`): Complete hands-on guide with working examples
 
 ## Modifications from Original
