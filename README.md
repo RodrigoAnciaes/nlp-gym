@@ -5,7 +5,7 @@
 - Luiz Felipe Lazzaron
 - Rodrigo Anciães Patelli
 
-# Video Presentation: [MP4_File](classes/VideoClass.mp4)
+# Video Presentation: [Youtube](https://youtu.be/P1rxYGnp8b0)
 
 > **Note**: This is a **modified fork** of the original [nlp-gym](https://github.com/rajcscw/nlp-gym) repository, adapted for educational purposes with updated dependencies and compatibility fixes.
 
