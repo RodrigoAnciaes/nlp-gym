@@ -1,5 +1,12 @@
 # NLPGym - Modified Educational Version [![CircleCI](https://circleci.com/gh/rajcscw/nlp-gym/tree/main.svg?style=svg)](https://circleci.com/gh/rajcscw/nlp-gym/tree/main)
 
+## Group Members:
+
+- Luiz Felipe Lazzaron
+- Rodrigo Anciães Patelli
+
+# Video Presentation: [MP4_File](classes\VideoClass.mp4)
+
 > **Note**: This is a **modified fork** of the original [nlp-gym](https://github.com/rajcscw/nlp-gym) repository, adapted for educational purposes with updated dependencies and compatibility fixes.
 
 NLPGym is a toolkit to bridge the gap between applications of RL and NLP. This aims at facilitating research and benchmarking of DRL application on natural language processing tasks. 
